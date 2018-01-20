@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('firstname');
             $table->string('email')->unique();
             $table->string('message');
-            $table->string('password')->PASSWORD_BCRYPT;
+            $table->string('password')->bcrypt();
             $table->timestamps();
         });
     }

@@ -22,3 +22,5 @@ Route::get('user/new', 'UserController@new');
 Route::get('user/{usersId}', 'UserController@show');
 
 Route::post('user', 'UserController@create');
+
+Route::get('send', 'MailController@send');
